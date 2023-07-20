@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <p id="resultado"></p>
+    <input type="number" name="num" id="inum">
+    <input type="number" name="num2" id="inum2">
+    <input type="button" value="somar" onclick="soma()">
+    <script>
+        function soma(){
+            var n1 = window.document.getElementById('inum')
+            var n2 = window.document.getElementById('inum2')
+            var res = window.document.getElementById('resultado')
+            var nn1 = Number(n1.value)
+            var nn2 = Number(n2.value)
+            var s = nn1 + nn2
+            res.innerHTML = s
+        }
+    </script>
+</body>
+</html>
