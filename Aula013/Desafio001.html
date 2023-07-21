@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JS</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #CEBD92;
+        }
+        h1#tit {
+            color: white;
+            font-size: 26pt;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.595);
+            padding: 20px;
+        }
+        section#prin {
+            background-color: white;
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.377)
+        }
+        p#hora {
+            padding: 20px;
+            text-align: center;
+            font-size: 15pt;
+        }
+        div#img2 {
+            display: flex;
+        }
+        img#img {
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+        }
+        p#gtr {
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+            padding: 10px;
+            text-align: center;
+            font-size: 14pt;
+        }
+    </style>
+
+</head>
+<body id="cor-fundo">
+    <h1 id="tit">Hora do Dia</h1>
+    <section id="prin">
+        <p id="hora">hora</p>
+        <div id="img2"><img src="8ac17178d2c47653cf109136a6d91759.jpg" alt="imagem" id="img"></div>
+    </section>
+    <p id="gtr">@gabriel_yKold</p>
+
+    <script>
+        var horario = document.getElementById('hora')
+        var foto = document.getElementById('img')
+        var fundo = document.getElementById('cor-fundo')
+
+        var hora = new Date()
+        var hora = hora.getHours() 
+        
+        if (hora <= 12) {
+            horario.innerHTML = `Agora são ${hora} horas`
+            foto.src = 'milagre-da-manha-para-vendedores.jpg'
+            foto.style.borderRadius = '15%'
+            fundo.style.backgroundColor = '#CEBD92'
+        } else if (hora <= 18) {
+            horario.innerHTML = `Agora são ${hora} horas3`
+            foto.src = 'malu_pires-2023-03-09T125512.852-1200x600.jpg'
+            foto.style.borderRadius = '15%'
+            fundo.style.backgroundColor = '#A47661'
+        } else {
+            horario.innerHTML = `Agora são ${hora} horas`
+            foto.src = 'linda-noite-no-oceano-com-lua-cheia_104785-866.avif'
+            foto.style.borderRadius = '15%'
+            fundo.style.backgroundColor = '#494A4B'
+        }
+    </script>
+</body>
+</html>
