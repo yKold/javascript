@@ -1,11 +1,16 @@
-function resultado() {
-    var inicio = document.getElementById('inicio')
-    var fim = document.getElementById('fim')
-    var passo = document.getElementById('passo')
-    var res = document.getElementById('res')
+function contar() {
+    let ini = document.getElementById('inicio')
+    let fim = document.getElementById('final')
+    let passo = document.getElementById('pulo')
+    let res = document.getElementById('res')
     // window.alert(Number(passo.value))
+    
+    let i = Number(ini.value)
+    let f = Number(fim.value)
+    let p = Number(passo.value)
 
-    var num = inicio.value
-    while (num <= fim.value) {
-        res.innerHTML = `${num}`
-        num ++}}
+    for (let c = i; c <= f; c += p) {
+        window.alert(c)
+        res.innerHTML += `${c}, `
+    }
+}
