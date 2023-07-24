@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: rgb(0, 174, 255);
+        }
+        h1#title {
+            color: white;
+            font-size: 26pt;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.595);
+            padding: 20px;
+        }
+        section#principal {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.377)
+        }
+        div#form {
+            padding: 20px;
+            font-size: 15pt;
+            text-align: center;
+        }
+        img#img {
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+        }
+        div {
+            padding: 20px;
+        }
+        div#res {
+            font-size: 12pt;
+            text-align: center;
+        }
+        p {
+            padding: 10px;
+        }
+        select {
+            width: 150px;
+        }
+        p#eu {
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+            padding: 10px;
+            text-align: center;
+            font-size: 14pt;
+        }
+    </style>
+
+</head>
+<body id="cor-fundo">
+    <header>
+        <h1 id="title"> Tabuada </h1>
+    </header>
+    <section id="principal">
+        <div >
+            Número (entre 1 e 100):
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><select name="flista" id="flista" size="6"></select>
+            <br><input type="button" value="Finalizar" onclick="resultado()">
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p id="eu">@Gabriel_yKold</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>    
+</html>
