@@ -8,5 +8,5 @@ let calculadora = {
     soma = a + b
     resultado = console.log(soma)
 }}
-
-calculadora.subtração(2, 7)
+resultado = Number(calculadora.subtração(3, 7))
+console.log(`O valor final foi: `+ resultado)

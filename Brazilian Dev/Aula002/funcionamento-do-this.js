@@ -20,5 +20,4 @@ let personagemN1 = {
         console.log(`Vivo feliz nestas terras!`)
     } ,
 }
-
-personagemN1.falaN5()
+personagemN1.falaN1()
