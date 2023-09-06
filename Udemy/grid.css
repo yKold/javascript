@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*duas colunas com uma fração da tela - repeat(3, 1fr) para repetir o 1fr 3 vezes - colocar "auto" faz com q os itens respeitem o espaço da div pai - repeat(auto-fill, minmax(200px, 1fr)) ele se repete sempre para completar o espaço, usando o tamanho colocado*/
+    grid-template-rows: 2fr; /* cada linha terá o espaço de 2fr */
+    justify-content: end; /*manda para o fim das colunas*/
+    align-items: end; /* manda para o fim das fileiras*/
+
+    grid-column: 1/3; /*começa no 1 e termina no 3 - usar "span 2" para n repetir o inicio e fim*/
+
+    /*Site para testar : "grid.malven.co"*/
+}
