@@ -1,0 +1,2 @@
+'helooooo'.includes('o') // true
+
