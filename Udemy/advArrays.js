@@ -18,3 +18,11 @@ const filterArray = array.filter(num => {
 const reduceArray = array.reduce((accumulator, num) => {
     return accumulator + num
 }, 0) // o valor '0' é pq o acumulador começa em 0 e soma com os arrays
+
+//map()
+
+const map1 = new Map();
+
+map1.set('a', 1);
+map1.set('b', 2);
+map1.set('c', 3);
